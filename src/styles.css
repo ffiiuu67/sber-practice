@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1f2937;
+  background: #f3f6fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 8%;
+  background: #111827;
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: white;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 36px auto;
+}
+
+.card {
+  border-radius: 18px;
+  padding: 28px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.hero {
+  min-height: 260px;
+  display: grid;
+  align-content: center;
+}
+
+.form-card {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+form,
+label {
+  display: grid;
+  gap: 10px;
+}
+
+form {
+  gap: 18px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.error {
+  margin: 0;
+  color: #dc2626;
+}
+
+.note {
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #854d0e;
+  background: #fef3c7;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.movie h2 {
+  margin-top: 0;
+}
+
+.movie span {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #2563eb;
+}
